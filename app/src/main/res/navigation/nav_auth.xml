@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/fragment_signin"
+    android:id="@+id/nav_auth">
+
+    <fragment android:id="@+id/fragment_signin"
+        android:name="com.rsz.foodapp.ui.auth.signin.SignInFragment"
+        tools:layout="@layout/fragment_sign_in">
+
+        <action android:id="@+id/action_signin_to_signup"
+            app:destination="@id/fragment_signup"/>
+
+    </fragment>
+
+    <fragment android:id="@+id/fragment_signup"
+        android:name="com.rsz.foodapp.ui.auth.signup.SignUpFragment"
+        tools:layout="@layout/fragment_sign_up">
+
+        <action android:id="@+id/action_signup_to_success"
+            app:destination="@id/fragment_signup_success"/>
+
+    </fragment>
+
+    <fragment android:id="@+id/fragment_signup_success"
+        android:name="com.rsz.foodapp.ui.auth.signup.SignUpSuccessFragment"
+        tools:layout="@layout/fragment_sign_up_success">
+    </fragment>
+
+
+</navigation>
