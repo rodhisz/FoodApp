@@ -1,4 +1,4 @@
-package com.rsz.foodapp.profile
+package com.rsz.foodapp.ui.profile
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

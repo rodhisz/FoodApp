@@ -3,12 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/bottom_nav_icon_color_selector.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/shape_rectangle_8_fff.xml" value="0.135" />
         <entry key="app/src/main/res/layout/activity_auth.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1933395385742188" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.21875" />
+        <entry key="app/src/main/res/layout/fragment_new_taste_home.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/fragment_sign_in.xml" value="0.2334381103515625" />
         <entry key="app/src/main/res/layout/fragment_sign_up.xml" value="0.125" />
         <entry key="app/src/main/res/layout/fragment_sign_up_success.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/item_home_horinzontal.xml" value="0.6827794561933535" />
+        <entry key="app/src/main/res/layout/item_home_vertical.xml" value="0.1" />
         <entry key="app/src/main/res/layout/layout_toolbar.xml" value="0.2144212523719165" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.15520833333333334" />
       </map>

@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.FoodApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.FoodApp" parent="Theme.AppCompat.Light">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -16,6 +16,9 @@
 
     //style untuk no action bar
     <style name="Theme.FoodApp.noActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
     </style>
 
     //style text view
@@ -81,6 +84,21 @@
         <item name="android:textColor">#fff</item>
         <item name="android:textSize">14sp</item>
         <item name="android:background">@drawable/rounded_button_grey</item>
+    </style>
+
+    //style Tab
+    <style name="Tab">
+        <item name="android:fontFamily">@font/poppins_reguler</item>
+        <item name="android:textColor">#8D92A3</item>
+        <item name="android:textSize">14sp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    //style ratingBar
+    <style name="RatingBar">
+        <item name="colorControlNormal">#ECECEC</item>
+        <item name="colorControlActivated">#FFC700</item>
     </style>
 
 </resources>

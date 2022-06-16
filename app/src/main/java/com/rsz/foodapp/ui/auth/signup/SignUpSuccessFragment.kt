@@ -25,6 +25,7 @@ class SignUpSuccessFragment : Fragment() {
 
         btn_findFoods.setOnClickListener {
             startActivity(Intent(activity, MainActivity::class.java))
+            activity?.finish()
         }
     }
 

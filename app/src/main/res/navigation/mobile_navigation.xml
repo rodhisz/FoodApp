@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.rsz.foodapp.home.HomeFragment"
+        android:name="com.rsz.foodapp.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_add"
-        android:name="com.rsz.foodapp.add.AddFragment"
+        android:name="com.rsz.foodapp.ui.add.AddFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_add" />
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.rsz.foodapp.profile.ProfileFragment"
+        android:name="com.rsz.foodapp.ui.profile.ProfileFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_profile" />
 </navigation>
