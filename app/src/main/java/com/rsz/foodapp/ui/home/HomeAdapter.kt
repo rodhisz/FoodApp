@@ -4,14 +4,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
 import com.rsz.foodapp.R
-import com.rsz.foodapp.model.dummy.HomeModel
-import kotlinx.android.synthetic.main.fragment_home.view.*
+import com.rsz.foodapp.model.dummy.HomeModelHorizontal
 import kotlinx.android.synthetic.main.item_home_horinzontal.view.*
 
 class HomeAdapter (
-    private val listData : List<HomeModel>,
+    private val listData : List<HomeModelHorizontal>,
     private val itemAdapterCallback : ItemAdapterCallback
     ) : RecyclerView.Adapter<HomeAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HomeAdapter.ViewHolder {
@@ -29,7 +27,7 @@ class HomeAdapter (
     }
 
     class ViewHolder (itemView : View) : RecyclerView.ViewHolder(itemView){
-        fun bind(data : HomeModel, itemAdapterCallback : ItemAdapterCallback){
+        fun bind(data : HomeModelHorizontal, itemAdapterCallback : ItemAdapterCallback){
             itemView.apply {
                 tv_home_food_title_horizontal.text = data.title
                 rb_home_food_rating_horizontal.rating = data.rating
@@ -46,6 +44,6 @@ class HomeAdapter (
     }
 
     interface ItemAdapterCallback {
-        fun onClick(v : View, data:HomeModel)
+        fun onClick(v : View, data:HomeModelHorizontal)
     }
 }

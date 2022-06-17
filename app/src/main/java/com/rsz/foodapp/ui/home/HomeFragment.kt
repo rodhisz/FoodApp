@@ -9,12 +9,12 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.rsz.foodapp.databinding.FragmentHomeBinding
-import com.rsz.foodapp.model.dummy.HomeModel
+import com.rsz.foodapp.model.dummy.HomeModelHorizontal
 import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment(), HomeAdapter.ItemAdapterCallback {
 
-    private var foodList : ArrayList<HomeModel> = ArrayList()
+    private var foodList : ArrayList<HomeModelHorizontal> = ArrayList()
     private var _binding: FragmentHomeBinding? = null
 
     // This property is only valid between onCreateView and
@@ -51,13 +51,13 @@ class HomeFragment : Fragment(), HomeAdapter.ItemAdapterCallback {
     fun initDataDummy() {
 
         foodList = ArrayList()
-        foodList.add(HomeModel("Nasgor","",5f))
-        foodList.add(HomeModel("Naspad","",4f))
-        foodList.add(HomeModel("bubur","",2f))
+        foodList.add(HomeModelHorizontal("Nasgor","",5f))
+        foodList.add(HomeModelHorizontal("Naspad","",4f))
+        foodList.add(HomeModelHorizontal("bubur","",2f))
 
     }
 
-    override fun onClick(v: View, data: HomeModel) {
+    override fun onClick(v: View, data: HomeModelHorizontal) {
         Toast.makeText(context, "Detail", Toast.LENGTH_SHORT).show()
     }
 }

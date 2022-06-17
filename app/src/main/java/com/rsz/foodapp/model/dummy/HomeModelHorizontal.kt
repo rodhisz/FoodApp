@@ -1,6 +1,6 @@
 package com.rsz.foodapp.model.dummy
 
-class HomeModel (title: String, src:String, rating:Float) {
+class HomeModelHorizontal (title: String, src:String, rating:Float) {
 
     var title = ""
     var src = ""
