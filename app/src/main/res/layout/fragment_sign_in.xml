@@ -17,6 +17,7 @@
         android:text="Email" />
 
     <EditText
+        android:id="@+id/et_email_sign_in"
         style="@style/EditText.PoppinsReguler14black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,6 +36,7 @@
         android:text="Password" />
 
     <EditText
+        android:id="@+id/et_password_sign_in"
         style="@style/EditText.PoppinsReguler14black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -46,21 +48,21 @@
 
     <Button
         android:id="@+id/btn_signIn"
-        android:layout_marginTop="24dp"
         style="@style/Button.BtnPrimaryPoppinsMedium14black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAllCaps="false"
-        android:text="Sign In" />
+        android:layout_marginTop="24dp"
+        android:text="Sign In"
+        android:textAllCaps="false" />
 
     <Button
         android:id="@+id/btn_signUp"
-        android:layout_marginTop="12dp"
-        android:textAllCaps="false"
         style="@style/Button.BtnSecondaryPoppinsMedium14black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Create New Account" />
+        android:layout_marginTop="12dp"
+        android:text="Create New Account"
+        android:textAllCaps="false" />
 
 
 </LinearLayout>

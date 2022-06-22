@@ -72,12 +72,18 @@
         <item name="android:textSize">18sp</item>
     </style>
 
+    <style name="TextView.PoppinsReguler18black">
+        <item name="android:fontFamily">@font/poppins_reguler</item>
+        <item name="android:textColor">#020202</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
     //style edit text
     <style name="EditText"/>
 
     <style name="EditText.PoppinsReguler14black">
         <item name="android:fontFamily">@font/poppins_reguler</item>
-        <item name="android:textColor">#8D92A3</item>
+        <item name="android:textColor">#020202</item>
         <item name="android:textSize">14sp</item>
     </style>
 

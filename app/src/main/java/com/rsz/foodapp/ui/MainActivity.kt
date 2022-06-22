@@ -1,14 +1,12 @@
-package com.rsz.foodapp
+package com.rsz.foodapp.ui
 
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.Navigation
-import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
+import com.rsz.foodapp.R
 import com.rsz.foodapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -23,11 +21,7 @@ class MainActivity : AppCompatActivity() {
 
         val navView: BottomNavigationView = binding.navView
 
-//        if (getSupportActionBar() != null) {
-//            getSupportActionBar()?.hide();
-//        }
-
-        val navController = Navigation.findNavController(this,R.id.nav_host_fragment_activity_main)
+        val navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main)
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration(
@@ -37,7 +31,5 @@ class MainActivity : AppCompatActivity() {
         )
 
         NavigationUI.setupWithNavController(navView,navController)
-//        setupActionBarWithNavController(navController, appBarConfiguration)
-//        navView.setupWithNavController(navController)
     }
 }

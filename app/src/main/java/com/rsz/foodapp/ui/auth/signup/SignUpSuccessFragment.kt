@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.rsz.foodapp.MainActivity
+import com.rsz.foodapp.ui.MainActivity
 import com.rsz.foodapp.R
 import kotlinx.android.synthetic.main.fragment_sign_up_success.*
 
@@ -25,7 +25,7 @@ class SignUpSuccessFragment : Fragment() {
 
         btn_findFoods.setOnClickListener {
             startActivity(Intent(activity, MainActivity::class.java))
-            activity?.finish()
+            activity?.finishAffinity()
         }
     }
 

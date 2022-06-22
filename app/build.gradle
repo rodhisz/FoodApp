@@ -14,7 +14,11 @@ android {
         versionCode 1
         versionName "1.0"
 
+
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        flavorDimensions "dev"
+        multiDexEnabled true
     }
 
     buildTypes {
@@ -33,6 +37,14 @@ android {
 
     buildFeatures{
         viewBinding true
+    }
+
+    productFlavors {
+        dev {
+            applicationId = "com.rsz.foodapp.dev"
+            buildConfigField "String", "BASE_URL", "\"https://food.tiorisnanto.com/\""
+//            buildConfigField "String", "BASE_URL", "\"http://foodmarket-backend.buildwithangga.id/\""
+        }
     }
 }
 
@@ -56,6 +68,24 @@ dependencies {
     //glide
     implementation 'com.github.bumptech.glide:glide:4.13.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.13.0'
+
+    //network
+    implementation "com.squareup.retrofit2:adapter-rxjava2:2.6.2"
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.11.0'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    implementation 'io.reactivex.rxjava2:rxkotlin:2.2.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+
+    implementation 'com.airbnb.android:lottie:3.4.4'
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.preference:preference-ktx:1.2.0'
+
+
+    implementation 'com.github.dhaval2404:imagepicker:2.1'
+
+    implementation 'com.readystatesoftware.chuck:library:1.1.0'
 
 
 //    implementation 'com.google.android.material:material:1.6.1'

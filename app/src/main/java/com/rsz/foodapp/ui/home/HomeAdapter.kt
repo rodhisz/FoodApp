@@ -4,12 +4,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.rsz.foodapp.R
 import com.rsz.foodapp.model.dummy.HomeModelHorizontal
+import com.rsz.foodapp.model.response.home.Data
 import kotlinx.android.synthetic.main.item_home_horinzontal.view.*
 
 class HomeAdapter (
-    private val listData : List<HomeModelHorizontal>,
+    private val listData : List<Data>,
     private val itemAdapterCallback : ItemAdapterCallback
     ) : RecyclerView.Adapter<HomeAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HomeAdapter.ViewHolder {
@@ -27,14 +29,14 @@ class HomeAdapter (
     }
 
     class ViewHolder (itemView : View) : RecyclerView.ViewHolder(itemView){
-        fun bind(data : HomeModelHorizontal, itemAdapterCallback : ItemAdapterCallback){
+        fun bind(data : Data, itemAdapterCallback : ItemAdapterCallback){
             itemView.apply {
-                tv_home_food_title_horizontal.text = data.title
-                rb_home_food_rating_horizontal.rating = data.rating
+                tv_home_food_title_horizontal.text = data.name
+                rb_home_food_rating_horizontal.rating = data.rate.toFloat() ?: 0.0f
 
-//                Glide.with(context)
-//                    .load(data.src)
-//                    .into(iv_home_food_horizontal)
+                Glide.with(context)
+                    .load(data.picturePath)
+                    .into(iv_home_food_horizontal)
 
                 itemView.setOnClickListener {
                     itemAdapterCallback.onClick(it, data)
@@ -44,6 +46,6 @@ class HomeAdapter (
     }
 
     interface ItemAdapterCallback {
-        fun onClick(v : View, data:HomeModelHorizontal)
+        fun onClick(v : View, data:Data)
     }
 }
